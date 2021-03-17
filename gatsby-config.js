@@ -1,7 +1,3 @@
-require("dotenv").config({
-  path: `.env.${process.env.NODE_ENV}`
-})
-
 module.exports = {
   siteMetadata: {
     title: `ShellHub`,
@@ -26,13 +22,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: process.env.GA_TRACKING_ID,
+        trackingId: 'UA-168888230-1',
       },
     },
     {
       resolve: `gatsby-plugin-google-tagmanager`,
       options: {
-        id: process.env.GTM_ID,
+        id: 'GTM-57P8QVT',
         includeInDevelopment: true,
       },
     },
