@@ -30,6 +30,13 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-google-tagmanager`,
+      options: {
+        id: process.env.GTM_ID,
+        includeInDevelopment: true,
+      },
+    },
+    {
       resolve: `gatsby-plugin-page-creator`,
       options: {
         path: `${__dirname}/src/pages`,
