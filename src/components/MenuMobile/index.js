@@ -3,6 +3,8 @@ import { Link } from 'gatsby'
 
 import { ButtonMobileStyle, MenuMobileStyle } from './styles'
 
+/* using de disable command to stop the warning about the logo */
+/* eslint-disable-next-line */
 import Logo from '../../assets/logo.svg'
 
 export default function MenuMobile() {

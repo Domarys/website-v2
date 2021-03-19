@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaFacebookF, FaInstagram, FaYoutube, FaTwitter, FaLinkedinIn } from 'react-icons/fa'
+import { FaGithub, FaGitter, FaFacebookF, FaTwitter, FaLinkedinIn } from 'react-icons/fa'
 import { Link } from 'gatsby'
 import  { FooterStyle, FlashMenuStyle } from './styles'
 
@@ -16,7 +16,7 @@ function Footer() {
       <FlashMenuStyle>
         <div className="container">
           <div className="main">
-            <a href="https://docs.shellhub.io/" target="_blank" className="item">
+            <a href="https://docs.shellhub.io/" target="_blank" rel="noreferrer" className="item">
               <Icon  url={<IconDocumentation/>}/>
               <div className="txt">
                 <h3>Documentation</h3>
@@ -39,11 +39,11 @@ function Footer() {
             <div className="left">
               <Logo/>
               <ul>
-                <li><a href=""><FaFacebookF/></a></li>
-                <li><a href=""><FaInstagram/></a></li>
-                <li><a href=""><FaYoutube/></a></li>
-                <li><a href=""><FaTwitter/></a></li>
-                <li><a href=""><FaLinkedinIn/></a></li>
+                <li><a aria-label="Github" href="https://github.com/shellhub-io" target="_blank" rel="noreferrer"><FaGithub/></a></li>
+                <li><a aria-label="Gitter" href="https://gitter.im/shellhub-io/community?at=5e30882a6f9d3d3498f5989d" target="_blank" rel="noreferrer"><FaGitter/></a></li>
+                <li><a aria-label="Facebook" href="https://www.facebook.com/ossystems/" target="_blank" rel="noreferrer"><FaFacebookF/></a></li>
+                <li><a aria-label="Twitter" href="https://twitter.com/os_systems?lang=en" target="_blank" rel="noreferrer"><FaTwitter/></a></li>
+                <li><a aria-label="LinkedIn" href="https://www.linkedin.com/company/ossystems/" target="_blank" rel="noreferrer"><FaLinkedinIn/></a></li>
               </ul>
             </div>
             <div className="right">
@@ -51,7 +51,7 @@ function Footer() {
                 <li><Link to="/get-started">Get started</Link></li>
                 <li><Link to="/pricing">Pricing</Link></li>
                 <li><Link to="/community">Community</Link></li>
-                <li><a href="https://docs.shellhub.io/" target="_blank">Documentation</a></li>
+                <li><a href="https://docs.shellhub.io/" target="_blank" rel="noreferrer">Documentation</a></li>
                 <li><Link to="/articles">Articles</Link></li>
                 <li><Link to="/contact">Contact</Link></li>
               </ul>
@@ -65,7 +65,7 @@ function Footer() {
             <p>©{new Date().getFullYear()} Shellhub - All rights reserved</p>
             <div className="made">
               <span>Design by:</span>
-              <a href="https://insanydesign.com/" target="_blank">
+              <a href="https://insanydesign.com/" target="_blank" rel="noreferrer">
                 <Insany/>
               </a>
             </div>

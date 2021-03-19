@@ -1,3 +1,5 @@
+/* using de disable command to stop the warning about the variable not used - the use of this import is necessary to JSX*/
+/* eslint-disable-next-line */
 import React, { useEffect } from 'react'
 import { Helmet } from "react-helmet"
 import { Link } from 'gatsby'

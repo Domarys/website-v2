@@ -1,3 +1,5 @@
+/* using de disable command to stop the warning about the variable not used - the use of this import is necessary to JSX*/
+/* eslint-disable-next-line */
 import React, { useEffect } from 'react'
 import { Link } from "gatsby"
 
@@ -20,7 +22,7 @@ const Header = ({fixed}) => {
               <Link to="/community" activeClassName="active">Community</Link>
             </li>
             <li>
-              <a href="https://docs.shellhub.io/" target="_blank">Documentation</a>
+              <a href="https://docs.shellhub.io/" target="_blank" rel="noreferrer">Documentation</a>
             </li>
             <li>
               <Link to="/articles" activeClassName="active">Articles</Link>

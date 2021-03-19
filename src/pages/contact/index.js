@@ -63,14 +63,14 @@ export default function Home() {
             <h1>Get in touch</h1>
             <p>Please provide us with your information and how we can help you, and our team will get back to you with the information your need.</p>
           </div>
-          <img src={IlustraContact} className="image" alt="Image contact"/>
+          <img src={IlustraContact} className="image" alt="Contact"/>
         </div>
         <div className="box-form">
           <h2>Looking for further information or any help?</h2>
           <p>You can use the form below to contact us.</p>
           <form action="" onSubmit={handleSubmit(onSubmit)}>
             <div className="form-group">
-              <label htmlFor="">Full name</label>
+              <label htmlFor="full-name">Full name</label>
               <input 
                 type="text" 
                 placeholder="Your name"
@@ -85,12 +85,12 @@ export default function Home() {
               }
             </div>
             <div className="form-group">
-              <label htmlFor="">E-mail</label>
+              <label htmlFor="email">E-mail</label>
               <input 
                 type="email" 
                 name="email"
                 placeholder="Type your e-mail"
-                ref={register({ required : true, pattern: /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g })}
+                ref={register({ required : true, pattern: /^[\w-]+@([\w-]+\.)+[\w-]{2,4}$/g })}
               />
               { 
                 errors.email && errors.email.type === "required" && <p className="error">E-mail is required</p> 
@@ -100,11 +100,11 @@ export default function Home() {
               }
             </div>
             <div className="form-group">
-              <label htmlFor="">Subject matter</label>
+              <label htmlFor="subject-matter">Subject matter</label>
               <select 
                 name="subjectMatter"
                 ref={register({ required : true })}
-                onChange={({target}) => setSelect(target.value)}
+                onBlur={({target}) => setSelect(target.value)}
                 
               >
                 <option value="">Please select the desired topic</option>

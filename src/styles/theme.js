@@ -1,3 +1,4 @@
+/* eslint-disable-next-line import/no-anonymous-default-export */
 export default {
   background : '#272B33',
   primaryBlue: '#667ACC',
