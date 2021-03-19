@@ -96,7 +96,7 @@ export default function Home() {
           <p>Every  successful software is adapted to its users needs. The best way to adapt the software forits users needs is allowing its users to directly influence its development and direction, thusopen-sourcing ShellHub was the obvious choice.</p>
           <p>We believe the future is Open Source and wecount on you to join us in this journey.</p>
 
-          <a href="https://github.com/shellhub-io/shellhub" target="_blank">
+          <a href="https://github.com/shellhub-io/shellhub" target="_blank" rel="noreferrer">
             <div className="txt">
               <Github/>
               <strong>Join thousands of developers who are creating the best remote access platform.</strong>

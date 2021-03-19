@@ -1,3 +1,5 @@
+/* Silent warning as import is necessary for JSX */
+/* eslint-disable-next-line */
 import React, { useEffect } from 'react'
 import { Helmet } from "react-helmet"
 import { Link } from 'gatsby'

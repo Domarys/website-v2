@@ -43,6 +43,7 @@ export default function PageCommunity() {
             <a
               href="https://github.com/shellhub-io"
               target="_blank"
+              rel="noreferrer"
               className="btn-github"
             >
               <div className="img-git">

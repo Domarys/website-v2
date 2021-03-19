@@ -3,6 +3,8 @@ import { Link } from 'gatsby'
 
 import { ButtonMobileStyle, MenuMobileStyle } from './styles'
 
+/* Silent warning as import is necessary */
+/* eslint-disable-next-line */
 import Logo from '../../assets/logo.svg'
 
 export default function MenuMobile() {

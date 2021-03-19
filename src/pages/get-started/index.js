@@ -7,6 +7,8 @@ import Icon from '../../components/Icon'
 
 import { SectionGetStartedStyle } from './styles'
 
+/* Silent warning as export is necessary to other files */
+/* eslint-disable-next-line */
 import Arrow from '../../assets/arrow-md.svg'
 import IconEdition from '../../assets/icon-edition.svg'
 import IconCloud from '../../assets/icon-cloud.svg'
@@ -29,7 +31,7 @@ export default function Home() {
             </div>
             <p>Host your own instance of ShellHub and count on the freedom to adapt it to your needs. </p>
             <span>Check the ShellHub installation guide and start right now!</span>
-            <a  href="https://docs.shellhub.io/" target="_blank">Get started</a>
+            <a  href="https://docs.shellhub.io/" target="_blank" rel="noreferrer" >Get started</a>
           </div>
           <div className="card">
             <div className="title-card">
@@ -39,7 +41,7 @@ export default function Home() {
             </div>
             <p>Access all benefits of ShellHub on a cloud-hosted service for your convenience.</p>
             <span>Register yourself and start it for free.</span>
-            <a  href="https://www.shellhub.io/register" target="_blank">Try cloud preview for free</a>
+            <a  href="https://www.shellhub.io/register" target="_blank" rel="noreferrer" >Try cloud preview for free</a>
           </div>
           <div className="card">
             <div className="title-card">

@@ -20,6 +20,9 @@ export default function PagePricing() {
   const [sliderArrow, setSliderArrow] = React.useState(50);
   const [sliderArrowRight, setSliderArrowRight] = React.useState(false);
   const [price, setPrice] = React.useState(1);
+
+  /* Silent warning  about the Slider Value of hook*/
+  /* eslint-disable-next-line */
   React.useEffect(() => {
     const price =
       (sliderValue - 3) *
@@ -167,6 +170,7 @@ export default function PagePricing() {
                       <a
                         href="https://docs.shellhub.io/"
                         target="_blank"
+                        rel="noreferrer"
                         className="btn"
                       >
                         Get Started
@@ -407,7 +411,7 @@ export default function PagePricing() {
                     <p>
                       Designed for engineers who prefer Do-it-yourself projects
                     </p>
-                    <a href="https://docs.shellhub.io/" target="_blank">
+                    <a href="https://docs.shellhub.io/" target="_blank" rel="noreferrer">
                       Get Started
                     </a>
                   </div>
@@ -452,10 +456,10 @@ export default function PagePricing() {
                   <div className="calc-price">
                     <div className="slider">
                       <div className="top-slider">
-                        <span onClick={handleMinusSliderValue}>
+                        <span role="none" onClick={handleMinusSliderValue} onKeyDown={handleMinusSliderValue}>
                           <Minus />
                         </span>
-                        <span onClick={handlePlusSliderValue}>
+                        <span role="none" onClick={handlePlusSliderValue} onKeyUp={handlePlusSliderValue}>
                           <Plus />
                         </span>
                       </div>
@@ -654,10 +658,10 @@ export default function PagePricing() {
                 <div className="calc-price">
                   <div className="slider">
                     <div className="top-slider">
-                      <span onClick={handleMinusSliderValue}>
+                      <span role="none" onClick={handleMinusSliderValue} onKeyDown={handleMinusSliderValue}>
                         <Minus />
                       </span>
-                      <span onClick={handlePlusSliderValue}>
+                      <span role="none" onClick={handlePlusSliderValue} onKeyUp={handlePlusSliderValue}>
                         <Plus />
                       </span>
                     </div>
