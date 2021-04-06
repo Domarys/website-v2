@@ -28,7 +28,7 @@ export default function Home() {
   function onSubmit(data) {
     setModalSuccess(true);
     
-    fetch('https://mail.updatehub.io/contact', {
+    fetch('https://mail.cloud.shellhub.io/contact', {
       method : 'POST',
       headers: {
         'Accept': 'application/json',
